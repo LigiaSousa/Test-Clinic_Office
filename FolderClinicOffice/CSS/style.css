@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none
+}
+
+a, button {
+    cursor: pointer;
+}
+
+body, input, textarea {
+    font-family: -apple-system, 'Open Sans', sans-serif;
+}
+
+input, button, textarea, select {
+    outline: none;
+}
+
+/* globals variables */
+
+.center {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* error */
+
+.error {
+    position: absolute;
+    background: #990000;
+    color: #f2f2f2;
+    padding: 20px;
+    right: 0;
+    top: 100px;
+    transition: all 2s;
+    z-index: 1000;
+}
+
+.none-error {
+    display: none;
+}
+
+/* header */
+
+header {
+    background-color: #36d99d77;
+    padding: 10px;
+}
+
+.brand {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.brand img {
+    width: 200px;
+}
+
+/* main */
+
+form {
+    padding: 50px 0;
+}
+header{
+    text-align: center;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+}
+
+.label-float input {
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #3951b2;
+}
+
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+.label-float input:required:invalid+label {
+    color: black;
+}
+
+.label-float input:focus:required:invalid {
+    border-bottom: 2px solid black;
+}
+
+.label-float input:focus+label, .label-float input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #3951b2;
+}
+
+form button[type='submit'] {
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    background: #6b87bf;
+    color: #fff;
+    border: none;
+}
+
+
+/* footer */
+
+.advertising, .location {
+    width: 50%;
+    padding: 0 5%;
+    padding-top: 20px;
+}
+.advertising p{
+    padding-top: 8px;
+}
+
+footer {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+
+li{
+    padding: 4px;
+}
+strong{
+    font-size: 18px;
+}
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color: #e4edf1;
+}
+
+/* form screen */
+
+.form {
+    width: 70%;
+}
+
+.form input {
+    width: 100%;
+    margin: 8px 0px;
+}
+
+.form>.label-float, .form select {
+    width: 94%;
+    margin: 0 2%;
+}
+
+.form .row .label-float, .form .row select {
+    width: 45%;
+    margin: 0 2%;
+}
+
+.form select {
+    padding: 5px;
+    margin: 15px 2%;
+}
+
+.form button[type='submit'] {
+    border-radius: 20px;
+    margin: 0 35%;
+    width: 30%;
+}
+
+/* congratulations */
+
+.congratulations {
+    text-align: center;
+}
+
+.congratulations p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.congratulations .row {
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.congratulations .row button {
+    padding: 10px 15px;
+    background-color: #6b87bf;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
